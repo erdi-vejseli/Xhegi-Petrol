@@ -465,3 +465,121 @@ html,body {
 .delay-3 { transition-delay: 0.6s; }
 .delay-4 { transition-delay: 0.8s; }
 
+/* pi ktau najsen kodi i css personalizaum per section why choose us */
+
+
+
+.whychoose_us-section {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    /* margin: auto; */
+    margin-bottom: 50px;
+     /* border: solid 5px red;  */
+     padding: 10px;
+}
+
+.whychoose_des {
+     margin-top: 28px; 
+      /* border: solid 2px green;    */
+    
+    
+}
+
+.whychoose_des p {
+    width: 70%;
+    color:var(--text);
+    margin: auto;
+
+    
+   
+}
+
+.whychoose_des h1 {
+    margin-bottom: 25px;
+    color:var(--text);
+    margin-left:120px ;
+}
+
+.whychoose_photo {
+    margin-left: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.whychoose_photo img {
+    width: 80%;
+}
+
+.reliability-section {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 50px;
+  
+}
+
+.reliability-page {
+    margin-top: 30px;
+}
+
+.reliability-page img {
+    width: 80%;
+    margin-left: 100px;
+    border-radius: 12px;
+}
+
+.reliability-desc {
+    margin-top: 30px;
+    width: 60%;
+}
+
+.reliability-desc p {
+    width: 70%;
+    color: var(--text);
+    margin-left: 132px;
+    
+}
+
+.reliability-desc h1 {
+    margin-bottom: 25px;
+    color: var(--text);
+    margin-left: 132px;
+}
+
+@media (max-width: 1180px) { 
+
+.whychoose_photo img,
+    .reliability-page img {
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+      .whychoose_des h1,
+    .reliability-desc h1 {
+        text-align: left;
+    
+    }
+    .whychoose_des p,
+    .reliability-desc p {
+        text-align: left;
+        width: 100%;
+    }
+    .whychoose_des,
+    .reliability-desc {
+        width: 90%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .whychoose_us-section,
+    .reliability-section {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+        
+    }
+       .whychoose_us-section
+        .whychoose_des h1  {
+        margin-left:0px;
+    }
+}
