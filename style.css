@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-
 :root {
     /* --primary: #ff6b00; */
     --primary:orange;
@@ -8,8 +7,8 @@
     --dark: #18181B;
     --light: #2d2d32;
     --text: #f0f0f0;
+    
 }
-
 
 html,body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,56 +19,55 @@ html,body {
     
 }
 
-
-
 .navbar {
     background: var(--dark);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: top 0.3s;
     padding: 1rem;
+  
 }
 
-.navbar-brand { font-weight: 700; font-size: 1.8rem; }
+.navbar-brand { font-weight: 700; font-size: 1.3rem; }
 .navbar-brand span { color: var(--primary); }
 
+.hero-heading  { margin-top: 50px;}
+.hero-heading h2 { text-wrap: nowrap;}
+   
 .hero {
     background:url("/images/fuel-tank-gauge-6283528328b27.jpg");
-  
-     /* background:url(kazallk.jpg) ; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100vh; /* fallback për Android/PC */
+    min-height: -webkit-fill-available; /* iOS Safari */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     position: relative;
+    
 }
 
-.hero h1 {
-  font-family: 'Montserrat', sans-serif;
+.hero-heading h2 {
+font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
   line-height: 1.2;
   text-transform: uppercase;
-  text-wrap: nowrap;
   color: var(--primary);
-  
 }
 
-
+.prices-box h2 {font-size: 1.8rem;}
+    
 .prices-box {
     background: rgba(0,0,0,0.7);
     border-radius: 15px;
     padding: 20px 30px;
-    max-width: 400px;
+    max-width: 300px;
     backdrop-filter: blur(3px);
     border: 2px solid var(--primary);
     position: relative;  
-    /* margin: 0 auto; */
+  
 }
 
 .price-badge {
@@ -78,8 +76,9 @@ html,body {
     padding: 5px 10px;
     font-weight: bold;
     display: inline-block;
-    min-width: 60px;
+     min-width: 70px;
     text-align: center;
+   
 }
 
 .btn-primary {
@@ -88,42 +87,29 @@ html,body {
     font-weight: 600;
     transition: all 0.3s;
 }
+
 .btn-primary:hover {
     background-color: #e67e00;
-    /* transform: translateY(-3px); */
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Typewriter */
 #typewriter {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--primary);
     margin-top: 15px;
     min-height: 30px;
     white-space: nowrap;
     line-height: 1.5;
+     text-wrap: wrap; 
+    text-align: left;
+    
 }
-#services {
-    background-color:var(--dark) !important;
-}
+#services { background-color:var(--dark) !important;}
 
+.oil-photo {display: none;}
 
-
-/* Mobile price layout */
-@media (max-width:768px) {
-    .prices-box {
-        max-width: 280px;
-     /* margin-top: 150px; */
-        padding: 15px 20px;
-    }
-    .prices-box .d-flex.justify-content {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-        .section-title {
+.section-title {
             position: relative;
             margin-bottom: 40px;
             padding-bottom: 15px;
@@ -142,13 +128,12 @@ html,body {
             background: var(--primary);
         }
         
-        /* Flip Card Styles */
         .flip-card {
             background-color: transparent;
             width: 100%;
-            height: 450px;
-            /* perspective: 1000px; */
+            height: 475px;
             margin-bottom: 30px;
+           
         }
         
         .flip-card-inner {
@@ -158,10 +143,12 @@ html,body {
             text-align: center;
             transition: transform 0.8s;
             transform-style: preserve-3d;
+             
         }
         
-        .flip-card:hover .flip-card-inner {
+        .flip-card.flip .flip-card-inner {
             transform: rotateY(180deg);
+           
         }
         
         .flip-card-front, .flip-card-back {
@@ -178,10 +165,12 @@ html,body {
             align-items: center;
             padding: 20px;
         }
-        
+      
+      
         .flip-card-front {
             background-color: var(--light);
             color: var(--text);
+            
             
         }
         
@@ -189,32 +178,17 @@ html,body {
             background-color: var(--secondary);
             color: white;
             transform: rotateY(180deg);
-      
+          
         }
         
+       
+
         .flip-icon {
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 20px;
         }
-        
-        /* Why Choose Us */
-        .choose-card {
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            background: var(--light);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-            height: 100%;
-            margin-bottom: 30px;
-            color: var(--text);
-        }
-        
-        .choose-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
+
         
         .choose-icon {
             font-size: 3rem;
@@ -224,7 +198,6 @@ html,body {
         
         .choose-img {
             width: 100%;
-         /* height: 250px; */
             border-radius: 10px;
             object-fit: cover;
             margin-top: 20px;
@@ -239,7 +212,8 @@ html,body {
         
         .carousel-item img {
             height: 500px;
-            object-fit: cover;
+            object-fit:contain;
+            
         }
         
         .counter {
@@ -253,27 +227,12 @@ html,body {
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-       
 
-      
-        
-        /* Rregullime për counter në mobile */
-        @media (max-width: 768px) {
-           #counters .counter-item {
-             flex-direction: column;
-            }
-        }
-
-       
-        .hero-heading {
-            margin-top: 420px; 
-            margin-left: 120px;
-        }
         
         /* FAQ */
         .faq {
             padding: 80px 0;
-            background-color: var(--light);
+            background-color: var(--dark);
         }
         
         .accordion-button:not(.collapsed) {
@@ -334,8 +293,6 @@ html,body {
         }
         
         .map-container iframe {
-            /* width: 100%; */
-            /* height: 300px; */
             height: 400px;
             border: none;
         }
@@ -405,6 +362,7 @@ html,body {
             bottom: 25px;
             transform: skewX(20deg);
              transform: skewY(-30deg);
+            
   }
 
   .custom-button:hover {
@@ -465,34 +423,24 @@ html,body {
 .delay-3 { transition-delay: 0.6s; }
 .delay-4 { transition-delay: 0.8s; }
 
-/* pi ktau najsen kodi i css personalizaum per section why choose us */
 
-
+/* this section is without bootstrap  */
 
 .whychoose_us-section {
     display: flex;
     flex-direction: row;
-    /* width: 100%; */
-    /* margin: auto; */
     margin-bottom: 50px;
-     /* border: solid 5px red;  */
      padding: 10px;
 }
 
-.whychoose_des {
-     margin-top: 28px; 
-      /* border: solid 2px green;    */
+.whychoose_des { margin-top: 28px; }
     
-    
-}
+
 
 .whychoose_des p {
     width: 70%;
     color:var(--text);
     margin: auto;
-
-    
-   
 }
 
 .whychoose_des h1 {
@@ -506,80 +454,125 @@ html,body {
     width: 100%;
     margin-top: 30px;
 }
+
 .whychoose_photo img {
-    width: 80%;
-}
-
-.reliability-section {
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
-    margin: auto;
-    margin-bottom: 50px;
-  
-}
-
-.reliability-page {
-    margin-top: 30px;
-}
-
-.reliability-page img {
-    width: 80%;
-    margin-left: 100px;
-    border-radius: 12px;
-}
-
-.reliability-desc {
-    margin-top: 30px;
-    width: 60%;
-}
-
-.reliability-desc p {
     width: 70%;
-    color: var(--text);
-    margin-left: 132px;
-    
 }
 
-.reliability-desc h1 {
-    margin-bottom: 25px;
-    color: var(--text);
-    margin-left: 132px;
-}
 
-@media (max-width: 1180px) { 
 
-.whychoose_photo img,
-    .reliability-page img {
-        width: 80%;
-        margin: 0 auto;
+
+
+
+
+
+        @media(max-width:480px) {
+
+            .flip-card-front, .flip-card-back {
+                 width: 70%;
+                height: 75%; 
+               
+            }
+
+            .flip-card-inner {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            .flip-card {height: 550px;  }
+            
+            .oil-photo {display: block; }
+                
+            .prices-box h2 { font-size: 1.3rem; }
+               
+            .hero-heading h2 {  font-size:1.3rem ; }
+              
+            #typewriter { font-size: 1rem; }
+               
+            /* .prices-box{  margin-top: 150px;} */
+        }
+
+       
         
-    }
-      .whychoose_des h1,
-    .reliability-desc h1 {
-        text-align: left;
-    
-    }
-    .whychoose_des p,
-    .reliability-desc p {
-        text-align: left;
-        width: 100%;
-    }
-    .whychoose_des,
-    .reliability-desc {
-        width: 90%;
-        margin-left: 0;
-        text-align: center;
-    }
-    .whychoose_us-section,
-    .reliability-section {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 80px;
+       
+        @media (max-width: 768px) {
+
+           #counters .counter-item {flex-direction: column; }
+             
+              .hero-heading { margin-top: 320px; }
+           
+                .hero-heading h2 {
+                    margin: auto;  
+                    text-align: center;
+                    text-wrap: wrap;
+                }
+
+                .carousel-item img {  object-fit: cover; }
+
+                /* Mobile price layout */
+                 .prices-box {
+                    max-width: 280px;
+                    padding: 15px 20px;
+                }
+
+                .prices-box .d-flex.justify-content {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+             
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+
+            .map-container iframe {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 1180px) { 
+
+        .whychoose_photo img,
+            .reliability-page img {
+                max-width: 80%;
+                margin: 0 auto;
+                
+            }
+            .whychoose_des h1,
+            .reliability-desc h1 {
+                text-align: left;
+            
+            }
+            .whychoose_des p,
+            .reliability-desc p {
+                text-align: left;
+                width: 100%;
+            }
+            .whychoose_des,
+            .reliability-desc {
+                width: 90%;
+                margin-left: 0;
+                text-align: center;
+            }
+            .whychoose_us-section,
+            .reliability-section {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 80px;
+                
+            }
+            .whychoose_us-section
+                .whychoose_des h1  {
+                margin-left:0px;
+            }
+            
         
-    }
-       .whychoose_us-section
-        .whychoose_des h1  {
-        margin-left:0px;
-    }
-}
+        }
+
+        @media (min-width:1024px) and (max-width:1366px) {
+                .whychoose_photo img {
+                    margin-left: 20px;
+                }
+        }
+ 
+      

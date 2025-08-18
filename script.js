@@ -22,7 +22,7 @@ const navbar = document.getElementById('mainNavbar');
 window.addEventListener('scroll', function() {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     if (st > lastScrollTop && st > 50){
-        navbar.style.top = "-80px";
+        navbar.style.top = "";
     } else {
         navbar.style.top = "0";
     }
@@ -54,6 +54,7 @@ function typeWriterLoop(){
     }
     setTimeout(typeWriterLoop, 80);
 }
+
 typeWriterLoop();
  document.addEventListener('DOMContentLoaded', function() {
             // Animacioni për counters kur të shfaqen në ekran
@@ -93,24 +94,6 @@ typeWriterLoop();
             // Kontrollo në fillim dhe gjatë scroll-it
             animateCounters();
             window.addEventListener('scroll', animateCounters);
-            
-            // Rregullim për kutinë e çmimeve në mobile
-            function adjustPriceBox() {
-                const priceBox = document.querySelector('.prices-box');
-                if (window.innerWidth < 768) {
-                    priceBox.style.position = 'absolute';
-                    priceBox.style.right = '15px';
-                    priceBox.style.top = '80px';
-                    priceBox.style.width = 'calc(100% - 30px)';
-                    priceBox.style.maxWidth = '300px';
-                } else {
-                    priceBox.style.position = 'static';
-                    priceBox.style.width = '100%';
-                }
-            }
-            
-            adjustPriceBox();
-            window.addEventListener('resize', adjustPriceBox);
         });
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -128,23 +111,12 @@ typeWriterLoop();
     animatedEls.forEach(el => observer.observe(el));
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Elementët që duam të mos ndryshojnë ngjyrën
-    const elements = document.querySelectorAll(
-        '.about-content, .choose-card, .contact-info, .prices-box, .footer, button, .btn-primary'
-    );
-
-    function applyColors() {
-        elements.forEach(el => {
-            el.style.backgroundColor = getComputedStyle(el).backgroundColor; // ruan current color
-            el.style.color = getComputedStyle(el).color; // ruan current text color
-            el.style.borderColor = getComputedStyle(el).borderColor; // ruan border
-        });
-    }
-
-    // Ndal dark mode changes
-    applyColors();
-
-    // Opsionale: kontrollon nëse përdoruesi ndryshon dark mode ndërkohë që faqja është e hapur
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyColors);
+// Toggle front/back me click
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', function() {
+    card.classList.toggle('flip'); // çdo klik alternon front/back
+  });
 });
+
+
+

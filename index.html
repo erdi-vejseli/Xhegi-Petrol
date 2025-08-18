@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Detyro vetëm light mode -->
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+
 <title>Xhegi Petrol</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
-
-  
-
-
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNavbar">
     <div class="container">
-        <a class="navbar-brand" href="#"><i class="fas fa-gas-pump me-2"></i><span>Xhegi</span>Petrol</a>
+        <a class="navbar-brand" href="#"><i class="fas fa-gas-pump me-2"></i><span>XHEGI </span>PETROL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">About us</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li> -->
@@ -35,22 +35,23 @@
 
 <!-- Hero Section -->
 <section class="hero">
-<div class="container text-center">
+<div class="container text-right">
     <div class="prices-box">
-        <h2 class="mb-4"><i class="fas fa-tags me-2"></i>Current prices</h2>
-        <div class="d-flex justify-content-between mb-3">
+        <h2 class="mb-2"><i class="fas fa-tags me-2"></i>Current prices </h2>
+          <strong  id="dateButton" ></strong><hr>
+        <div class="d-flex flex-wrap justify-content-between mb-3">
             <div><h4>Diesel</h4><span class="price-badge">68.50</span></div>
-            <div><h4>S.95</h4><span class="price-badge">74.50</span></div>
-            <div><h4>S.98</h4><span class="price-badge">76.50</span></div>
+            <div><h4 style="margin-left: 17px;">S.95</h4><span class="price-badge">74.50</span></div>
+            <div><h4 style="margin-left: 17px;">S.98</h4><span class="price-badge">76.50</span></div>
         </div>
-        <a id="dateButton" href="#" class="btn btn-primary w-100"></a>
+        <!-- <a id="dateButton" href="#" class="btn btn-primary w-100"></a> -->
         <div id="typewriter"></div>
     </div>
+
    <div class="hero-heading ">
-     <h1 >"Fuel Up and
-        <h1>hit the Road"</h1> </h1>
-     
+     <h2 >"Fuel Up, Hit the road" </h2>
    </div>
+
 </div>
 </section>
 
@@ -59,32 +60,29 @@
     <section id="services" class="py-5 bg-light">
         <div class="container py-5">
             <h2 class="section-title">Our services</h2>
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-4 col-md-6">
                     <div class="flip-card animate-fade delay-1">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <div class="flip-icon">
                                      <i class="fas fa-gas-pump"></i> 
-                                     <!-- <img style="width: 250px;" src="images/gasoline-delivery-port-jervis-ny-removebg-preview.png" alt=""> -->
                                 </div>
                                 <h3>Derivates</h3>
                                 <p>We proudly offer options designed for efficiency, performance, and cleaner driving.</p>
                               <button class="custom-button">Tap</button>
                             </div>
-                            <div class="flip-card-back">
-                                <div> 
-                                         <!-- <h3>Karburant Cilësor</h3> -->
-                                     <h3>Euro Diesel</h3>
-                <p>Clean and efficient diesel fuel designed for modern engines. Ensures smooth performance, reduced emissions, and improved mileage.</p>
+                            <div class="flip-card-back"><div> 
+                                
+                                     <h5>Euro Diesel</h5>
+                                            <p>Clean and efficient diesel fuel designed for modern engines.</p>
                 
-                <h3> Super 95 (S.95)</h3>
-                <p>Unleaded petrol with 95 octane rating – ideal for everyday driving. Offers balanced performance and protection for your engine.</p>
+                                     <h5> Super 95 </h5>
+                                            <p>Unleaded petrol with 95 octane rating – ideal for everyday driving.</p>
                 
-                <h3> Super 98 (S.98)</h3>
-                <p>High-octane unleaded petrol (98) for powerful performance. Perfect for sports cars and high-compression engines, providing maximum efficiency and acceleration </p>
+                                    <h5> Super 98 </h5>
+                                             <p> Perfect for sports cars and high-compression engines. </p>
                                 </div>
-                               
                                 </div>
                         </div>
                     </div>
@@ -93,52 +91,44 @@
                     <div class="flip-card animate-fade delay-2">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                
                                 <div class="flip-icon">
                                   <i class="fa-solid fa-bottle-droplet"></i> 
-                                   <!-- <img style="width: 250px;" src="images/large-oil-change-chaging-oil-petrochemical-power-generation1591628129-removebg-preview.png" class="box-img" alt="img"> -->
-                                </div>
-                                <h3>Oil </h3>
-                                <p>We provide high-quality oil products to keep your engine running smoothly and efficiently.</p>
-                                <button class="custom-button">Tap</button>
-                            </div>
-                            <div class="flip-card-back">
-                                 <p>Castrol – World-renowned for innovation and top-tier performance, perfect for both everyday drivers and high-performance engines.
-            <hr style="margin-bottom: 15px;">
 
-            Champion – Advanced Belgian technology for engines that demand durability and protection under pressure.
-            <hr style="margin-bottom: 15px;">
-            Midland – Swiss-made premium oils, focused on clean technology and high-performance standards.
-            <hr style="margin-bottom: 15px;">
-           </p>
-            <p>...and many other trusted brands – to suit every vehicle and every customer’s needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                </div>
+                                    <h3>Oil </h3>
+                                        <p>We provide high-quality oil products to keep your engine running smoothly and efficiently.</p>
+                                                 <button class="custom-button">Tap</button>
+                                         </div>
+
+                            <div class="flip-card-back">
+                                 <p>Castrol - Top-tier performance, perfect for both everyday drivers and high-performance engines.
+                                       <p> Champion - Advanced Belgian technology </p>
+                                            <p> Midland - Swiss-made premium oils, clean technology and high-performance standards.</p>
+                                               
+                                       
+                                            </div>
+                                         </div>
+                                     </div>
+                                </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="flip-card animate-fade delay-2">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <div class="flip-icon">
                                     <i class="fas fa-store"></i>
-                                </div>
-                                <h3>Market</h3>
-                                <p>Our market offers a wide selection of snacks, drinks, and essential items to keep you fueled and refreshed on the go.</p>
-                                <button class="custom-button">Tap</button>
-                            </div>
+
+                                     </div>
+                                        <h3>Market</h3>
+                                            <p>Our market offers a wide selection of snacks, drinks, and essential items to keep you fueled and refreshed on the go.</p>
+                                            <button class="custom-button">Tap</button>
+                                         </div>
+
                             <div class="flip-card-back">
-                                <p>Cold drinks, coffee & snacks
-              <hr >
-              Fresh baked goods & sandwiches
-              <hr>
-              Car accessories & hygiene products
-              <hr>
-              Cigarettes & mobile top-ups
-              <hr>
-              Household items and more
-            </p>
-                            </div>
+                                <p>Car accessories & hygiene products</p>
+                             <p>Fresh snacks and drinks </p>
+                        <p>Iced coffee</p>
+                     <p>Car care & travel items</p>
+               </div>
                         </div>
                     </div>
                 </div>
@@ -193,59 +183,7 @@
     </section>
 
    
-<!--     
-<section  id="why-us" class="py-5">
-    <div class="container py-5">
-        <h2 class="section-title text-center mb-5">Why choose us?</h2>
-
-        <div class="row row-cols-1  g-4">
-            <div class="col">
-                <div class="choose-card animate-left-choose delay-1">
-                    <div class="choose-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Quality</h3>
-                    <p>At our station, we prioritize offering only the highest-quality fuel to optimize your vehicle's performance. Along with premium-grade fuels, our cutting-edge pumps and rigorous maintenance standards ensure you get the best every time you visit.</p>
-                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Cilësia" class="choose-img">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="choose-card animate-left-choose delay-2">
-                    <div class="choose-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Partnership</h3>
-                    <p>We have strategic collaborations with the largest companies in the industry. This allows us to offer reasonable prices without compromising on quality.</p>
-                    <img src="/images/shakinghands.webp" alt="Partneriteti" class="choose-img">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="choose-card animate-left-choose delay-3">
-                    <div class="choose-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Reliability</h3>
-                    <p>We're more than just a place to fuel up—we're your partner on the road. With every stop, you're getting reliable service and top-quality fuel, ensuring your journey continues smoothly. Enjoy the ride, and let us take care of the rest!</p>
-                    <img src="/images/IMG_6306.JPG" alt="Stafi" class="choose-img">
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="choose-card animate-left-choose delay-2">
-                    <div class="choose-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Friendly staff</h3>
-                    <p>Our team is friendly, approachable, and always ready to assist you. We ensure every visit is smooth and pleasant.</p>
-                    <img src="/images/team.jpg" alt="Disponueshmëria" class="choose-img">
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
+<!-- Why choose us section -->
 <div class="main-service"><h1 class="section-title">Why choose us</h1></div>  
 
     <section class="whychoose_us-section animate-left">
@@ -286,8 +224,8 @@
                 We have strategic collaborations with the largest companies in the industry. This allows us to offer reasonable prices without compromising on quality. Our partnerships ensure that every visit delivers quality fuel, fast service, and added value for every customer.
             </p>
         </div>
-        <div class="whychoose_photo">
-             <img src="images/shakinghands.webp" alt=""> 
+        <div  class="whychoose_photo">
+             <img src="images/shakinghands2-removebg-preview.png" alt=""> 
     </div>
     </section>
     </div> 
@@ -359,10 +297,6 @@
                     <div class="counter" data-target="24">0</div>
                     <div class="counter-label">Nonstop</div>
                 </div>
-                <!-- <div class="col-md-3 col-6 mb-4 counter-item">
-                    <div class="counter" data-target="100">0</div>
-                    <div class="counter-label">Punonjës</div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -421,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <div><img style="width: 350px;margin-top: 35px;" src="oil1-removebg-preview.png" alt=""></div>
+            <div class="oil-photo"><img style="width: 350px;margin-top: 35px;" src="images/oil1-removebg-preview.png" alt=""></div>
         </div>
     </section>
 
@@ -482,7 +416,7 @@
         </div>
     </section>
 
-            <div class="text-center"> <hr>
+            <div style="padding: 12px;" class="text-center"> <hr>
                 <p>&copy; 2025 <strong style="color: var(--primary);">Xhegi </strong>Petrol. Developed by Erdi Vejseli</p>
             </div>
         </div>
