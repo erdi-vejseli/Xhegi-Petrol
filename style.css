@@ -38,12 +38,13 @@ html,body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* fallback për Android/PC */
+    height: 100dvh; /* fallback për Android/PC */
     min-height:-webkit-fill-available; /* iOS Safari */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+     overscroll-behavior: none;  /* ndalon “elastic bounce” që bën të duket sikur faqja dridhet. */
     
 }
 
@@ -170,7 +171,6 @@ font-family: 'Montserrat', sans-serif;
             color: var(--dark);
              background-color: var(--dark);
              color: var(--text);
-
               }
 
         .custom-button:hover {
@@ -243,7 +243,9 @@ font-family: 'Montserrat', sans-serif;
         .faq {
             padding: 80px 0;
             background-color: var(--dark);
+            
         }
+    
         
         .accordion-button:not(.collapsed) {
             background-color: var(--primary);
