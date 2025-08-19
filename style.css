@@ -16,6 +16,7 @@ html,body {
     overflow-x: hidden;
     color: var(--text);
     scroll-behavior: smooth;
+    overscroll-behavior: none !important;
     
 }
 
