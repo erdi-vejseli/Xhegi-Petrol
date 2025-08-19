@@ -2,7 +2,7 @@
 
 :root {
     /* --primary: #ff6b00; */
-    --primary:orange;
+    --primary:#ffa500;
     --secondary: #2d2d32;
     --dark: #18181B;
     --light: #2d2d32;
@@ -39,12 +39,12 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100dvh; /* fallback për Android/PC */
-    min-height:-webkit-fill-available; /* iOS Safari */
+    min-height: -webkit-fill-available; /* iOS Safari */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-     overscroll-behavior: none;  /* ndalon “elastic bounce” që bën të duket sikur faqja dridhet. */
+     overscroll-behavior: none !important;  /* ndalon “elastic bounce” që bën të duket sikur faqja dridhet. */
     
 }
 
