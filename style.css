@@ -81,17 +81,6 @@ font-family: 'Montserrat', sans-serif;
    
 }
 
-.btn-primary {
-    background-color: var(--primary);
-    border: none;
-    font-weight: 600;
-    transition: all 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #e67e00;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
 
 #typewriter {
     font-size: 1rem;
@@ -167,7 +156,26 @@ font-family: 'Montserrat', sans-serif;
             align-items: center;
             padding: 20px;
         }
-      
+        
+         .custom-button {
+            padding: 7px;
+            cursor: pointer;
+            transition: all 0.3s ease; 
+            width: 25%;
+            position: absolute;
+            right: 0px;
+            bottom:0px;
+            border: none;
+            border-top-left-radius: 7px;
+            color: var(--dark);
+             background-color: var(--dark);
+             color: var(--text);
+
+              }
+
+        .custom-button:hover {
+            transform: scale(1); 
+        }
       
         .flip-card-front {
             background-color: var(--light);
@@ -354,22 +362,7 @@ font-family: 'Montserrat', sans-serif;
             transform: scale(1.05);
         }
 
-         .custom-button {
-            padding: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease; 
-            width: 20%;
-            position: absolute;
-            right: 0px;
-            bottom: 25px;
-            transform: skewX(20deg);
-             transform: skewY(-30deg);
-            
-  }
-
-  .custom-button:hover {
-    transform: scale(1.05); /* efekt rritjeje paksa */
-  }
+        
 
 /* Efekt bazë animacion me opacity dhe levizje vertikale */
 .animate-fade {
@@ -464,11 +457,6 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-
-
-
-
-
         @media(max-width:480px) {
 
             .flip-card-front, .flip-card-back {
@@ -491,8 +479,11 @@ font-family: 'Montserrat', sans-serif;
             .hero-heading h2 {  font-size:1.3rem ; }
               
             #typewriter { font-size: 0.8rem; }
-               
-            /* .prices-box{  margin-top: 150px;} */
+
+            .custom-button {
+                min-width: 80px;
+                width: 10%;
+            } 
         }
 
        
