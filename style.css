@@ -39,7 +39,7 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh; /* fallback për Android/PC */
-    min-height: -webkit-fill-available; /* iOS Safari */
+    min-height:-webkit-fill-available; /* iOS Safari */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,6 +108,8 @@ font-family: 'Montserrat', sans-serif;
 #services { background-color:var(--dark) !important;}
 
 .oil-photo {display: none;}
+
+
 
 .section-title {
             position: relative;
@@ -431,6 +433,7 @@ font-family: 'Montserrat', sans-serif;
     flex-direction: row;
     margin-bottom: 50px;
      padding: 10px;
+     align-items: center;
 }
 
 .whychoose_des { margin-top: 28px; }
@@ -487,7 +490,7 @@ font-family: 'Montserrat', sans-serif;
                
             .hero-heading h2 {  font-size:1.3rem ; }
               
-            #typewriter { font-size: 1rem; }
+            #typewriter { font-size: 0.8rem; }
                
             /* .prices-box{  margin-top: 150px;} */
         }
