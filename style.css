@@ -39,13 +39,13 @@ html,body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100dvh; /* fallback për Android/PC */
-    min-height: -webkit-fill-available; /* iOS Safari */
+    height: 100vh !important; /* fallback për Android/PC */
+     /* min-height: -webkit-fill-available;   */
+    /* iOS Safari */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-     overscroll-behavior: none !important;  /* ndalon “elastic bounce” që bën të duket sikur faqja dridhet. */
     
 }
 
