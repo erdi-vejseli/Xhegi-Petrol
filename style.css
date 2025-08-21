@@ -10,7 +10,7 @@
     
 }
 
-html,body {
+/* html,body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--dark) !important;
     overflow-x: hidden;
@@ -19,6 +19,18 @@ html,body {
     overscroll-behavior: none !important;
     touch-action: pan-y;
     
+} */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark) !important;
+  overflow-x: hidden;
+  color: var(--text);
+  scroll-behavior: smooth;
+  overscroll-behavior: none;     /* ndalon bounce global */
+  touch-action: pan-y;           /* lejon vetëm scroll vertikal */
 }
 
 .navbar {
@@ -34,25 +46,25 @@ html,body {
 
 .hero-heading  { margin-top: 50px;}
 .hero-heading h2 { text-wrap: nowrap;}
-   
+/*    
 .hero {
     background:url("/images/fuel-tank-gauge-6283528328b27.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     /* height: 100vh !important; fallback për Android/PC */
     /* min-height: -webkit-fill-available;   */
     /* iOS Safari */
-    height: 100vh;
+    /* height: 100vh;
     height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     
-}
+} */
 
-.hero-heading h2 {
+/* .hero-heading h2 {
 font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -60,11 +72,11 @@ font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--primary);
-}
+} */
 
 .prices-box h2 {font-size: 1.8rem;}
     
-.prices-box {
+/* .prices-box {
     background: rgba(0,0,0,0.7);
     border-radius: 15px;
     padding: 20px 30px;
@@ -73,9 +85,9 @@ font-family: 'Montserrat', sans-serif;
     border: 2px solid var(--primary);
     position: relative;  
   
-}
+} */
 
-.price-badge {
+/* .price-badge {
     background: var(--primary);
     border-radius: 5px;
     padding: 5px 10px;
@@ -84,7 +96,63 @@ font-family: 'Montserrat', sans-serif;
      min-width: 70px;
     text-align: center;
    
+} */
+ html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark) !important;
+  overflow-x: hidden;
+  color: var(--text);
+  scroll-behavior: smooth;
+  overscroll-behavior: none;     /* ndalon bounce global */
+  touch-action: pan-y;           /* lejon vetëm scroll vertikal */
 }
+
+.hero {
+  background: url("/images/fuel-tank-gauge-6283528328b27.jpg") center/cover no-repeat;
+  height: 100svh;                /* përdor viewport të qëndrueshëm */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+/* kutia e çmimeve */
+.prices-box {
+  background: rgba(0,0,0,0.7);
+  border-radius: 15px;
+  padding: 20px 30px;
+  max-width: 320px;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  border: 2px solid var(--primary);
+  margin-bottom: 25px;
+}
+
+.price-badge {
+  background: var(--primary);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+
+.hero-heading h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0;
+}
+
 
 
 #typewriter {
