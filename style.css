@@ -17,6 +17,7 @@ html,body {
     color: var(--text);
     scroll-behavior: smooth;
     overscroll-behavior: none !important;
+    touch-action: pan-y;
     
 }
 
@@ -39,9 +40,11 @@ html,body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh !important; /* fallback për Android/PC */
-    min-height: -webkit-fill-available;  
+    /* height: 100vh !important; fallback për Android/PC */
+    /* min-height: -webkit-fill-available;   */
     /* iOS Safari */
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,6 +464,8 @@ font-family: 'Montserrat', sans-serif;
 
 
         @media(max-width:480px) {
+
+          
 
             .flip-card-front, .flip-card-back {
                  width: 70%;
