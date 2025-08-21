@@ -40,7 +40,7 @@ html,body {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh !important; /* fallback për Android/PC */
-     /* min-height: -webkit-fill-available;   */
+    min-height: -webkit-fill-available;  
     /* iOS Safari */
     display: flex;
     align-items: center;
