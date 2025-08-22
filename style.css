@@ -10,17 +10,6 @@
     
 }
 
-/* html,body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--dark) !important;
-    overflow-x: hidden;
-    color: var(--text);
-    scroll-behavior: smooth;
-    overscroll-behavior: none !important;
-    touch-action: pan-y;
-    
-} */
-
 html, body {
   height: 100%;
   margin: 0;
@@ -29,8 +18,8 @@ html, body {
   overflow-x: hidden;
   color: var(--text);
   scroll-behavior: smooth;
-  overscroll-behavior: none;     /* ndalon bounce global */
-  touch-action: pan-y;           /* lejon vetëm scroll vertikal */
+  overscroll-behavior: none;     
+  touch-action: pan-y;          
 }
 
 .navbar {
@@ -46,72 +35,12 @@ html, body {
 
 .hero-heading  { margin-top: 50px;}
 .hero-heading h2 { text-wrap: nowrap;}
-/*    
-.hero {
-    background:url("/images/fuel-tank-gauge-6283528328b27.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* height: 100vh !important; fallback për Android/PC */
-    /* min-height: -webkit-fill-available;   */
-    /* iOS Safari */
-    /* height: 100vh;
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-} */
-
-/* .hero-heading h2 {
-font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 5px 5px 8px rgba(0,0,0,0.7);
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: var(--primary);
-} */
 
 .prices-box h2 {font-size: 1.8rem;}
     
-/* .prices-box {
-    background: rgba(0,0,0,0.7);
-    border-radius: 15px;
-    padding: 20px 30px;
-    max-width: 300px;
-    backdrop-filter: blur(3px);
-    border: 2px solid var(--primary);
-    position: relative;  
-  
-} */
-
-/* .price-badge {
-    background: var(--primary);
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-weight: bold;
-    display: inline-block;
-     min-width: 70px;
-    text-align: center;
-   
-} */
- html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--dark) !important;
-  overflow-x: hidden;
-  color: var(--text);
-  scroll-behavior: smooth;
-  overscroll-behavior: none;     /* ndalon bounce global */
-  touch-action: pan-y;           /* lejon vetëm scroll vertikal */
-}
-
 .hero {
   background: url("/images/fuel-tank-gauge-6283528328b27.jpg") center/cover no-repeat;
-  height: 100svh;                /* përdor viewport të qëndrueshëm */
+  height: 100svh;               
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +49,7 @@ font-family: 'Montserrat', sans-serif;
   text-align: left;
 }
 
-/* kutia e çmimeve */
+
 .prices-box {
   background: rgba(0,0,0,0.7);
   border-radius: 15px;
@@ -151,271 +80,262 @@ font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: var(--primary);
   margin: 0;
+ 
 }
-
 
 #typewriter {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--primary);
-    margin-top: 15px;
-    min-height: 30px;
-    white-space: nowrap;
-    line-height: 1.5;
-     text-wrap: wrap; 
-    text-align: left;
+ font-size: 1rem;
+ font-weight: bold;
+color: var(--primary);
+margin-top: 15px;
+ min-height: 30px;
+white-space: nowrap;
+line-height: 1.5;
+ text-wrap: wrap; 
+text-align: left;
     
 }
+
 #services { background-color:var(--dark) !important;}
 
 .oil-photo {display: none;}
 
-
-
 .section-title {
-            position: relative;
-            margin-bottom: 40px;
-            padding-bottom: 15px;
-            text-align: center;
-            color: var(--primary);
-        }
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: var(--primary);
+ }
         
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--primary);
-        }
+.section-title:after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 80px;
+ height: 4px;
+ background: var(--primary);
+}
         
-        .flip-card {
-            background-color: transparent;
-            width: 100%;
-            height: 475px;
-            margin-bottom: 30px;
-           
-        }
+.flip-card {
+ background-color: transparent;
+ width: 100%;
+ height: 475px;
+ margin-bottom: 30px;
+}
         
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-             
-        }
+.flip-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ transition: transform 0.8s;
+ transform-style: preserve-3d;
+}
         
-        .flip-card.flip .flip-card-inner {
-            transform: rotateY(180deg);
-           
-        }
+.flip-card.flip .flip-card-inner {
+ transform: rotateY(180deg); 
+ }
         
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+.flip-card-front, .flip-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ border-radius: 10px;
+ box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+}
         
-         .custom-button {
-            padding: 7px;
-            cursor: pointer;
-            transition: all 0.3s ease; 
-            width: 25%;
-            position: absolute;
-            right: 0px;
-            bottom:0px;
-            border: none;
-            border-top-left-radius: 7px;
-            color: var(--dark);
-             background-color: var(--dark);
-             color: var(--text);
-              }
+.custom-button {
+ padding: 7px;
+ cursor: pointer;
+ transition: all 0.3s ease; 
+ width: 25%;
+ position: absolute;
+ right: 0px;
+ bottom:0px;
+ border: none;
+ border-top-left-radius: 7px;
+ color: var(--dark);
+ background-color: var(--dark);
+ color: var(--text);
+ }
 
-        .custom-button:hover {
-            transform: scale(1); 
-        }
+.custom-button:hover {
+ transform: scale(1); 
+}
       
-        .flip-card-front {
-            background-color: var(--light);
-            color: var(--text);
-            
-            
-        }
+.flip-card-front {
+ background-color: var(--light);
+ color: var(--text);
+}
         
-        .flip-card-back {
-            background-color: var(--secondary);
-            color: white;
-            transform: rotateY(180deg);
-          
-        }
-        
-       
+.flip-card-back {
+ background-color: var(--secondary);
+ color: white;
+ transform: rotateY(180deg);
+ }
 
-        .flip-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
+ .flip-icon {
+ font-size: 3rem;
+ color: var(--primary);
+ margin-bottom: 20px;
+}
 
         
-        .choose-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
+.choose-icon {
+ font-size: 3rem;
+ color: var(--primary);
+ margin-bottom: 20px;
+}
         
-        .choose-img {
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-            margin-top: 20px;
-        }
+.choose-img {
+ width: 100%;
+ border-radius: 10px;
+ object-fit: cover;
+ margin-top: 20px;
+}
         
         /* Achievements */
-        .achievements {
-            background: linear-gradient(to right, var(--secondary), var(--dark));
-            color: white;
-            padding: 80px 0;
-        }
+.achievements {
+background: linear-gradient(to right, var(--secondary), var(--dark));
+color: white;
+padding: 80px 0;
+}
         
-        .carousel-item img {
-            height: 500px;
-            object-fit:contain;
+       
+.carousel-item img {
+height: 500px;
+object-fit:contain;
             
         }
         
-        .counter {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
+.counter {
+font-size: 2.5rem;
+font-weight: 700;
+color: var(--primary);
+}
         
-        .counter-label {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.counter-label {
+font-size: 1rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
 
         
         /* FAQ */
-        .faq {
-            padding: 80px 0;
-            background-color: var(--dark);
-            
-        }
+.faq {
+padding: 80px 0;
+background-color: var(--dark);
+}
     
         
-        .accordion-button:not(.collapsed) {
-            background-color: var(--primary);
-            color: white;
-        }
+.accordion-button:not(.collapsed) {
+ background-color: var(--primary);
+ color: white;
+}
         
-        .accordion-button {
-            background-color: var(--dark);
-            color: var(--text);
-        }
+.accordion-button {
+ background-color: var(--dark);
+ color: var(--text);
+}
         
-        .accordion-body {
-            background-color: var(--dark);
-            color: var(--text);
-        }
+.accordion-body {
+ background-color: var(--dark);
+ color: var(--text);
+}
         
         /* Marquee */
-        .marquee {
-            background-color: var(--primary);
-            color: white;
-            padding: 15px 0;
-            overflow: hidden;
-        }
+.marquee {
+  background-color: var(--primary);
+  color: white;
+  padding: 15px 0;
+  overflow: hidden;
+}
         
-        .marquee-content {
-            display: inline-block;
-            white-space: nowrap;
-            animation: marquee 20s linear infinite;
-            font-size: 1.8rem;
-            font-weight: bold;
-            padding-left: 100%;
+.marquee-content {
+ display: inline-block;
+ white-space: nowrap;
+ animation: marquee 20s linear infinite;
+ font-size: 1.8rem;
+ font-weight: bold;
+ padding-left: 100%;
         }
         
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
+ 0% { transform: translateX(0); }
+ 100% { transform: translateX(-100%); }
         }
         
         .contact-info {
-            background: var(--secondary);
-            color: white;
-            padding: 40px;
-            border-radius: 10px;
+ background: var(--secondary);
+ color: white;
+ padding: 40px;
+ border-radius: 10px;
         }
         
         .contact-info i {
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-right: 15px;
+ font-size: 1.5rem;
+ color: var(--primary);
+ margin-right: 15px;
         }
         
         .map-container {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            height: 100%;
+ border-radius: 10px;
+ overflow: hidden;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ height: 100%;
         }
         
         .map-container iframe {
-            height: 400px;
-            border: none;
+ height: 400px;
+ border: none;
         }
         
         .footer {
-            background: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-            border-top: 2px solid var(--primary);
+ background: var(--dark);
+ color: white;
+ padding: 40px 0 20px;
+ border-top: 2px solid var(--primary);
         }
         
         .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            color: white;
-            margin-right: 10px;
-            transition: all 0.3s;
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ background: rgba(255,255,255,0.1);
+ border-radius: 50%;
+ text-align: center;
+ line-height: 40px;
+ color: white;
+ margin-right: 10px;
+ transition: all 0.3s;
         }
         
         .social-icons a:hover {
-            background: var(--primary);
-            transform: translateY(-5px);
+ background: var(--primary);
+ transform: translateY(-5px);
         }
         
         /* Seksioni i ri "Rreth Nesh" */
         .about-section {
-            padding: 80px 0;
-            background-color: var(--dark);
+ padding: 80px 0;
+ background-color: var(--dark);
         }
         
         .about-content {
-            background: var(--light);
-            border-radius: 15px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+ background: var(--light);
+ border-radius: 15px;
+ padding: 40px;
+ box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
         
         .about-image {
@@ -533,18 +453,18 @@ font-family: 'Montserrat', sans-serif;
         @media(max-width:480px) {
 
              .hero {
-    justify-content: flex-start;   /* kutia mos të qëndrojë gjithmonë në qendër */
+    justify-content: flex-start;   
     padding-top: 20px;
-    align-items: flex-start;       /* i vendos elementet majtas */
+    align-items: flex-start;       
   }
 
   .prices-box {
-    max-width: 250px;              /* më e ngushtë në mobile */
-    margin: 0 0 20px 15px;         /* pak hapësirë nga ana e majtë dhe poshtë */
+    max-width: 250px;            
+    margin: 0 0 20px 15px;         
   }
 
   .hero-heading {
-    text-align: center;              /* edhe titulli majtas */
+    text-align: center;              
     padding-left: 15px;
   }
 
