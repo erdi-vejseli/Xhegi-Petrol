@@ -56,45 +56,44 @@ function typeWriterLoop(){
 }
 
 typeWriterLoop();
- document.addEventListener('DOMContentLoaded', function() {
-            // Animacioni për counters kur të shfaqen në ekran
-            const counterItems = document.querySelectorAll('.counter-item');
-            let countersAnimated = false;
-            
-            function animateCounters() {
-                if (countersAnimated) return;
-                
-                const rect = document.getElementById('counters').getBoundingClientRect();
-                const isVisible = (rect.top <= window.innerHeight && rect.bottom >= 0);
-                
-                if (isVisible) {
-                    countersAnimated = true;
-                    
-                    counterItems.forEach(item => {
-                        const counter = item.querySelector('.counter');
-                        const target = parseInt(counter.getAttribute('data-target'));
-                        let count = 0;
-                        
-                        const updateCount = () => {
-                            const increment = target / 50;
-                            if (count < target) {
-                                count += increment;
-                                counter.innerText = Math.ceil(count);
-                                setTimeout(updateCount, 30);
-                            } else {
-                                counter.innerText = target;
-                            }
-                        }
-                        
-                        updateCount();
-                    });
-                }
-            }
-            
-            // Kontrollo në fillim dhe gjatë scroll-it
-            animateCounters();
-            window.addEventListener('scroll', animateCounters);
-        });
+              
+            document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    let current = 0;
+    const increment = target / 200; // sa shpejt ngjitet
+
+    // Merr suffix nga data-suffix në HTML, ose bosh nëse nuk ka
+    const suffix = counter.getAttribute("data-suffix") || "";
+
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = Math.ceil(current) + suffix;
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target + suffix;
+      }
+    };
+
+    updateCounter();
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.8 });
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+});
 
         document.addEventListener('DOMContentLoaded', () => {
     const animatedEls = document.querySelectorAll('.animate-fade, .animate-left, .animate-left-choose, .animate-right-choose');
