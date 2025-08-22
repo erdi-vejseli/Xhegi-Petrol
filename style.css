@@ -117,7 +117,7 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
   justify-content: center;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 /* kutia e çmimeve */
@@ -125,7 +125,7 @@ font-family: 'Montserrat', sans-serif;
   background: rgba(0,0,0,0.7);
   border-radius: 15px;
   padding: 20px 30px;
-  max-width: 320px;
+  max-width: 300px;
   width: 100%;
   backdrop-filter: blur(3px);
   border: 2px solid var(--primary);
@@ -152,7 +152,6 @@ font-family: 'Montserrat', sans-serif;
   color: var(--primary);
   margin: 0;
 }
-
 
 
 #typewriter {
@@ -533,7 +532,21 @@ font-family: 'Montserrat', sans-serif;
 
         @media(max-width:480px) {
 
-          
+             .hero {
+    justify-content: flex-start;   /* kutia mos të qëndrojë gjithmonë në qendër */
+    padding-top: 20px;
+    align-items: flex-start;       /* i vendos elementet majtas */
+  }
+
+  .prices-box {
+    max-width: 250px;              /* më e ngushtë në mobile */
+    margin: 0 0 20px 15px;         /* pak hapësirë nga ana e majtë dhe poshtë */
+  }
+
+  .hero-heading {
+    text-align: center;              /* edhe titulli majtas */
+    padding-left: 15px;
+  }
 
             .flip-card-front, .flip-card-back {
                  width: 70%;
